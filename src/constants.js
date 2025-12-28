@@ -1,0 +1,72 @@
+export const cardArray = [
+    {
+        id:0,
+        title: 'Мишка на севере',
+        price: '170 ₽',
+        address: 'Великий Устюг',
+        date: '31 декабря 2025',
+        img: '/image/card-img.png'
+    },
+    {
+        id:1,
+        title: 'Трюфельные',
+        price: '180 ₽',
+        address: 'Великий Устюг',
+        date: '31 декабря 2025',
+        img: '/image/card-img.png'
+    },
+    {
+        id:2,
+        title: 'Мармелад соленый',
+        price: '150 ₽',
+        address: 'Великий Устюг',
+        date: '31 декабря 2025',
+        img: '/image/card-img.png'
+    },
+    {
+        id:3,
+        title: 'Стрела',
+        price: '550 ₽',
+        address: 'Великий Устюг',
+        date: '31 декабря 2025',
+        img: '/image/card-img.png'
+    },
+    {
+        id:4,
+        title: 'Рафаэль',
+        price: '777 ₽',
+        address: 'Великий Устюг',
+        date: '31 декабря 2025',
+        img: '/image/card-img.png'
+    },
+    {
+        id:5,
+        title: 'Грильяж',
+        price: '3 ₽',
+        address: 'Великий Устюг',
+        date: '31 декабря 2025',
+        img: '/image/card-img.png'
+    }
+]
+
+export const sideArray = [
+    {
+        id: 0,
+        icon: '/image/side-info1.svg',
+        title: 'Дрыставка',
+        text: 'Проверка при получении и возможность бесплатно вернуть товар'
+    },
+      {
+        id: 1,
+        icon: '/image/side-info2.svg',
+        title: 'Автотека',
+        text: 'Отчёт с историей авто: пробег, владельцы, сведения о залоге, ДТП и ремонтах'
+    },
+      {
+        id: 2,
+        icon: '/image/side-info3.svg',
+        title: 'Онлайн-бронирование жилья',
+        text: 'Посуточная аренда квартир и домов: большой выбор вариантов для поездок по России'
+    },
+    
+]
