@@ -1,36 +1,28 @@
-import { useOutlet, useOutletContext } from "react-router"
-import { Card } from "../components/Card/Card"
+import { useOutletContext, useParams } from "react-router"
 import { Side } from "../components/Side/Side"
 import { sideArray } from "../constants"
 
 
-export const Home = () => {
-
+export const Product = () => {
     const {products} = useOutletContext()
 
+    const { id } = useParams();
+    const findProduct = products.find((p) => p.id === +id)
     return (
        <section className="content">
                     <div className="conteiner">
+                        {findProduct ? 
                         <div className="content-box">
-                            <div className="content-main">
-                                <h2 className="content-main_title">Рекомендации для вас</h2>
-                                <div className="content-main_list">
-                                    {
-                                        products.map(card => (
-                                            <Card
-                                                key={card.id}
-                                                id={card.id}
-                                                title={card.title}
-                                                price={card.price}
-                                                address={card.address}
-                                                date={card.date}
-                                                img={card.img}
-                                            />
-                                        ))
-                                    }
-
-
-
+                            <div className="content-product">
+                                <div className="content-product_left">
+                                    <h2 className="content-product_title">{findProduct.title}</h2>
+                                    <img src= {findProduct.img} alt= {findProduct.title} className="content-product_img" />
+                                    <p className="content-product_title">
+                                        {findProduct.description}</p>
+                                </div>
+                                <div className="content-product_right">
+                                    <h2 className="content-product_price">{findProduct.price}</h2>
+                                    <button className="btn btn-primary btn-large">Подать объявление</button>
                                 </div>
                             </div>
                             <div className="content-side">
@@ -39,7 +31,7 @@ export const Home = () => {
                                     <div className="content-side_list">
                                         {
                                             sideArray.map(side => (
-                                                <Side 
+                                                <Side
                                                     key={side.id}
                                                     icon={side.icon}
                                                     title={side.title}
@@ -55,8 +47,12 @@ export const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
+                        : 
+                        <h2>Эй, ты чо нна? Такого у нас нетУ.</h2>}
+                        
                     </div>
                 </section>
+
     )
 }

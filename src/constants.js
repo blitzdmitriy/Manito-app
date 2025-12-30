@@ -5,7 +5,8 @@ export const cardArray = [
         price: '170 ₽',
         address: 'Великий Устюг',
         date: '31 декабря 2025',
-        img: '/image/card-img.png'
+        img: '/image/card-img.png',
+        description: 'Мишка с севера передает всем сладкий привет и поздравления с наступающим новым годом'
     },
     {
         id:1,
@@ -13,7 +14,8 @@ export const cardArray = [
         price: '180 ₽',
         address: 'Великий Устюг',
         date: '31 декабря 2025',
-        img: '/image/card-img.png'
+        img: '/image/card-img.png',
+        description: 'Мишка с севера передает всем трюфельный привет и поздравления с наступающим новым годом'
     },
     {
         id:2,
@@ -21,7 +23,8 @@ export const cardArray = [
         price: '150 ₽',
         address: 'Великий Устюг',
         date: '31 декабря 2025',
-        img: '/image/card-img.png'
+        img: '/image/card-img.png',
+        description: 'Мишка с севера передает всем мармеладный привет и поздравления с наступающим новым годом'
     },
     {
         id:3,
@@ -29,7 +32,8 @@ export const cardArray = [
         price: '550 ₽',
         address: 'Великий Устюг',
         date: '31 декабря 2025',
-        img: '/image/card-img.png'
+        img: '/image/card-img.png',
+        description: 'Мишка с севера передает всем ЭЛИТНЫЙ привет и поздравления с наступающим новым годом'
     },
     {
         id:4,
@@ -37,7 +41,8 @@ export const cardArray = [
         price: '777 ₽',
         address: 'Великий Устюг',
         date: '31 декабря 2025',
-        img: '/image/card-img.png'
+        img: '/image/card-img.png',
+        description: 'Михаэль с Маями передает всем сладкий привет и поздравления с наступающим новым годом'
     },
     {
         id:5,
@@ -45,7 +50,8 @@ export const cardArray = [
         price: '3 ₽',
         address: 'Великий Устюг',
         date: '31 декабря 2025',
-        img: '/image/card-img.png'
+        img: '/image/card-img.png',
+        description: 'Йетти с севера передает всем каменный привет и поздравления с наступающим новым годом'
     }
 ]
 
